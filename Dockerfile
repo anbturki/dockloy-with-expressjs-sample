@@ -20,7 +20,6 @@ COPY . .
 
 EXPOSE 3000
 
-# Health check
 
 # Start the application
 
