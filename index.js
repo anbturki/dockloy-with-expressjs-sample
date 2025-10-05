@@ -5,17 +5,17 @@ const port = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 
-const oneMinute = 60000;
-const threeMinutes = 3 * oneMinute;
+const oneSecond = 1000;
+const threeSeconds = 3 * oneSecond;
 
 setInterval(() => {
     console.log('Health check:', new Date().toISOString());
-}, threeMinutes);
+}, threeSeconds);
 
 
 setInterval(() => {
     console.log('Uptime:', process.uptime());
-}, oneMinute);
+}, oneSecond);
 
 // Routes
 app.get('/', (req, res) => {
