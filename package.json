@@ -1,0 +1,14 @@
+{
+  "name": "dockloy-with-expressjs-sample",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Sample app for testing deployments",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
