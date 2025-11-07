@@ -19,7 +19,7 @@ setInterval(() => {
 // Routes
 app.get("/", (req, res) => {
   res.json({
-    message: process.env.INTRO + " " + "Hello from Deploy Platform - V3!",
+    message: "Hello from Deploy Platform - V3!",
     timestamp: new Date().toISOString(),
     version: process.env.APP_VERSION || "1.0.0",
     environment: process.env.NODE_ENV || "development",
